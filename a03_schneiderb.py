@@ -33,6 +33,7 @@ def function_1(t1):
     t1.end_fill()
 
 
+
 function_1(t1)
 
 t2 = turtle.Turtle()
