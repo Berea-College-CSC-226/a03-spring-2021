@@ -33,7 +33,6 @@ def function_1(t1):
     t1.end_fill()
 
 
-function_1(t1)
 
 t2 = turtle.Turtle()
 t2.pensize(10)
@@ -58,8 +57,6 @@ def function_2(t2):
     t2.fd(140)
     t2.end_fill()
 
-
-function_2(t2)
 
 t3 = turtle.Turtle()
 t3.pensize(5)
@@ -88,7 +85,6 @@ def function_3(t3):
     t3.penup()
 
 
-function_3(t3)
 
 t4 = turtle.Turtle()
 t4.pensize(30)
@@ -113,7 +109,6 @@ def function_4(t4):
     t4.forward(20)
 
 
-function_4(t4)
 
 t5 = turtle.Turtle()
 t5.pensize(5)
@@ -142,18 +137,16 @@ def function_5(t5):
     t5.end_fill()
 
 
-function_5(t5)
-
 t6 = turtle.Turtle()
-t6.pensize(5)
-t6.speed(9)
-t6.pencolor("#000000") # sets the sraw color to black
-t6.fillcolor("#53868B") # sets the fill color to cadet blue
 
 
 # door of the house
 def function_6(t6):
     """The use of this function is to draw the door on the house"""
+    t6.pensize(5)
+    t6.speed(9)
+    t6.pencolor("#000000")  # sets the sraw color to black
+    t6.fillcolor("#53868B")  # sets the fill color to cadet blue
     t6.penup()
     t6.forward(50)
     t6.pendown()
@@ -169,7 +162,18 @@ def function_6(t6):
     t6.end_fill()
 
 
-function_6(t6)
+def main():
+    function_1(t1)
+    function_2(t2)
+    function_3(t3)
+    function_4(t4)
+    function_5(t5)
+    function_6(t6)
+
+
+main()
+
+
 
 
 
