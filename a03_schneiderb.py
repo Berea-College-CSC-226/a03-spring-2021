@@ -12,13 +12,13 @@ wn = turtle.Screen()
 wn.bgcolor('light blue')
 
 t1 = turtle.Turtle()
-t1.pensize(10)
-t1.speed(9)
 
 
 # House body
 def function_1(t1):
     """ the use of this function is to draw the body of the house"""
+    t1.pensize(10)
+    t1.speed(9)
     t1.pencolor("#A52A2A")
     t1.fillcolor("#A52A2A")
     t1.begin_fill()
@@ -33,15 +33,14 @@ def function_1(t1):
     t1.end_fill()
 
 
-
 t2 = turtle.Turtle()
-t2.pensize(10)
-t2.speed(9)
 
 
 # Roof of House
 def function_2(t2):
     """the use of this function of to draw the roof onto the top of the house"""
+    t2.pensize(10)
+    t2.speed(9)
     t2.pencolor("#CD0000")  # sets pen color
     t2.fillcolor("#CD0000")   # sets fill color
     t2.penup()
@@ -59,13 +58,13 @@ def function_2(t2):
 
 
 t3 = turtle.Turtle()
-t3.pensize(5)
-t3.speed(9)
 
 
 # chimney
 def function_3(t3):
     """ the use of this function is to draw the chimney on the house """
+    t3.pensize(5)
+    t3.speed(9)
     t3.penup()
     t3.pencolor("#CD0000")
     t3.fillcolor("#CD0000")
@@ -85,15 +84,14 @@ def function_3(t3):
     t3.penup()
 
 
-
 t4 = turtle.Turtle()
-t4.pensize(30)
-t4.speed(9)
 
 
 # chimney smoke
 def function_4(t4):
     """ the use of this function is to draw the chimney smoke """
+    t4.pensize(30)
+    t4.speed(9)
     t4.pencolor("#808080")   # setting draw color
     t4.fillcolor("#808080")  # setting fill color
     t4.penup()
@@ -109,15 +107,14 @@ def function_4(t4):
     t4.forward(20)
 
 
-
 t5 = turtle.Turtle()
-t5.pensize(5)
-t5.speed(9)
 
 
 # window for the house
 def function_5(t5):
     """the use of this function is to draw the window of the house """
+    t5.pensize(5)
+    t5.speed(9)
     t5.pencolor("#000000") # sets pen color to black
     t5.fillcolor("#00FFFF")   # sets fill color to aqua
     t5.penup()
