@@ -13,10 +13,11 @@ import turtle
 
 
 def spider():
-    ts=turtle.Screen()    # name turtle screen
+    """draw a spider"""
+    ts = turtle.Screen()    # name turtle screen
     ts.bgcolor("#861F9B")          # set background color to purple
 
-    t1= turtle.Turtle()   # setting up turtle
+    t1 = turtle.Turtle()   # setting up turtle
     t1.speed(0)
     t1.up()
     t1.color("black")
@@ -111,10 +112,10 @@ def spider():
 
 
 def hearts():
-
+    """draw two hearts on the spider's back"""
     # setting up turtle
     t2 = turtle.Turtle()
-    t2.color("#F901F5")       #pink
+    t2.color("#F901F5")       # pink
     t2.up()
     t2.goto(-50, 80)
     t2.seth(45)
@@ -169,7 +170,7 @@ def hearts():
         t2.fd(15)
         t2.rt(2)
 
-    for i in range (15):   # bottom of heart
+    for i in range(15):   # bottom of heart
         t2.fd(1)
         t2.rt(6)
 
@@ -187,12 +188,12 @@ def hearts():
 
 
 def eyes():
-
+    """draw four eyes on the spider"""
     t3=turtle.Turtle()        # setting up turtle
     t3.color("#656265")      # grey
     t3.up()
     t3.ht()
-    t3.goto(-5,-122)
+    t3.goto(-5, -122)
     t3.seth(40)
     t3.down()
 
@@ -207,21 +208,21 @@ def eyes():
     t3.end_fill()
 
     t3.up()                # setting turtle position
-    t3.goto(-25,-120)
+    t3.goto(-25, -120)
     t3.seth(200)
     t3.down()
 
     t3.begin_fill()
 
-    t3.circle(15,130)   # left oval eye
-    t3.circle(5,50)
-    t3.circle(15,130)
+    t3.circle(15, 130)   # left oval eye
+    t3.circle(5, 50)
+    t3.circle(15, 130)
     t3.circle(5, 50)
 
     t3.end_fill()
 
     t3.up()             # setting turtle position
-    t3.goto(-70,-122)
+    t3.goto(-70, -122)
     t3.seth(200)
     t3.down()
 
@@ -234,22 +235,23 @@ def eyes():
     t3.end_fill()
 
     t3.up()            # setting turtle position
-    t3.goto(-55,-120)
+    t3.goto(-55, -120)
     t3.seth(200)
     t3.down()
 
     t3.begin_fill()
 
-    t3.circle(15,130)   # right oval eye
-    t3.circle(5,50)
-    t3.circle(15,130)
+    t3.circle(15, 130)   # right oval eye
+    t3.circle(5, 50)
+    t3.circle(15, 130)
     t3.circle(5, 50)
 
     t3.end_fill()
 
 
 def flower():
-    t4=turtle.Turtle()       # setting up turtle
+    """draw four flowers"""
+    t4 = turtle.Turtle()       # setting up turtle
     t4.up()
     t4.goto(200, -150)
     t4.color("#F1DF77")      # pale yellow
@@ -415,7 +417,7 @@ def main():
     hearts()
     flower()
 
-    ts=turtle.Screen()
+    ts = turtle.Screen()
     ts.exitonclick()
 
 
