@@ -61,13 +61,13 @@ def create_turtle():
     name.speed(0)
     name.ht()
     turtle.colormode(255)
-    color = (randrange(0, 255), randrange(0, 255), randrange(0, 255))
+    color = (randrange(256), randrange(256), randrange(256))
     name.color(color)
     name.fillcolor(color)
     return name
 
 
-def koch_and_stroke():
+def koch_params():
     """creates random parameters for our koch snowflake on each run, and loops the drawing until we close"""
     turtle_list = ["turtle1"]
     width = int(turtle.window_width() / 2)
@@ -88,7 +88,7 @@ def koch_and_stroke():
 def main():
     window = turtle.Screen()
     window.bgcolor("black")
-    koch_and_stroke()
+    koch_params()
 
 
 main()
